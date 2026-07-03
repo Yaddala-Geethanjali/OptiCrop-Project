@@ -4,7 +4,7 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
     <title>OptiCrop Result</title>
     <style>
-        *{
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -185,17 +185,21 @@ button{
 
     body{
         align-items:flex-start;
+        justify-content:flex-start;
         overflow:auto;
     }
 
     .container{
         flex-direction:column;
-        height:auto;
+        width:100%;
         min-height:100vh;
+        border-radius:0;
     }
 
-    .left-panel{
+    .left-panel,
+    .right-panel{
         width:100%;
+        height:auto;
         padding:20px;
     }
 
@@ -213,11 +217,6 @@ button{
 
     .quote-box p{
         font-size:15px;
-    }
-
-    .right-panel{
-        width:100%;
-        padding:25px;
     }
 
     .right-panel h1{
@@ -238,7 +237,7 @@ button{
 }
 
 /* ================= SMALL MOBILE ================= */
-@media (max-width: 480px){
+@media (max-width: 400px){
 
     .quote-box h1{
         font-size:24px;
@@ -256,7 +255,7 @@ button{
         font-size:15px;
     }
 }
-    </style>
+</style>
 </head>
 <body>
 
